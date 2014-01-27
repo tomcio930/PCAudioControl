@@ -37,3 +37,6 @@ nosetests.xml
 
 #mp3
 *.mp3
+
+#aptana files
+.settings
