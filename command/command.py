@@ -9,7 +9,7 @@ import speech
 from subprocess import call
 class Command():
     def __init__(self):
-        self.supportedCommands = {u'wyłącz':'shutdown', 'anuluj':'cancel_shutdown', 'youtube':'youtube'}
+        self.supported_commands = {u'wyłącz':'shutdown', 'anuluj':'cancel_shutdown', 'youtube':'youtube'}
      
     def cancel_shutdown(self):
         call(["shutdown", "-a"])
@@ -28,4 +28,4 @@ class Command():
         speech.say("Youtube is opening.")
         
     def getSupportedCommands(self):
-        return self.supportedCommands
+        return self.supported_commands

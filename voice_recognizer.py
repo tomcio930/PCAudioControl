@@ -16,7 +16,7 @@ voiceRecognizer = VoiceRecognizer()
 while True:
     recognized_text = voiceRecognizer.live_recognize()
     print recognized_text
-    if(recognized_text in cmd.supportedCommands.keys()):
-        getattr(cmd, cmd.supportedCommands[recognized_text])() #call cmd method
+    if(recognized_text in cmd.supported_commands.keys()):
+        getattr(cmd, cmd.supported_commands[recognized_text])() #call cmd method
         
         
