@@ -17,7 +17,7 @@ class Command():
      
     def shutdown(self):
         speech.say("Goodbye Tomekk.")
-        call(["shutdown", "-s", "-t", "1200"])
+        call(["shutdown", "-s", "-t", "60"])
          
     def chrome(self):
         call(["chrome.exe"])
